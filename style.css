@@ -1,0 +1,14 @@
+h1 {
+    color: red;  
+} .title {
+    color: purple;
+}
+#name {
+    color: navy;
+}
+
+/* 
+Red and purple are passsed over without "running" because #name
+is an ID sel which is more specific than title or h1
+they technically conflict with each other but name wins 
+*/
