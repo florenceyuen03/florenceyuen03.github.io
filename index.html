@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
-    
         <header>
+            <div class="navbar">
             <h1 id="name" class="title">Florence Yuen</h1>
-            <img src="assets/derp.webp" alt="Photo placeholder" width="175">
+                <nav>
+                    <ul>
+                        <li><a href="#Projects">Projects</a></li>
+                        <li><a href="#Education">Education</a></li>
+                        <li><a href="#Skills">Skills</a></li>
+                        <li><a href="#Proficiency">Proficiency</a></li>
+                    </ul>
+                </nav>
+            </div>
 
+            <img src="assets/derp.webp" alt="Photo placeholder" width="175">
             <section id="photo-placeholder">
                 Photo Placeholder (Please pretend this is me)
             </section>
-
-            <nav>
-                <ul>
-                    <li><a href="#Education">Education</a></li>
-                    <li><a href="#Skills">Skills</a></li>
-                    <li><a href="#Proficiency">Proficiency</a></li>
-                </ul>
-            </nav>
 
             <section> 
                 <p>
@@ -30,6 +32,27 @@
         </header>
 
         <main>
+
+            <section id="Projects">
+                <h2>Projects</h2>
+                <div class="project-grid">
+                    <div class="card">
+                        <img src="assets/outImage.png" alt="Grid of colored pixels turning into grayscale">
+                        <h3>Pixel-Level Image Processing</h3>
+                        <p>Used NumPy and Matplotlib to convert images to grayscale, isolate RGB channels, and average images together.</p>
+                    </div>
+                    <div class="card">
+                        <img src="assets/restaurants.png" alt="Table of NYC restaurant Google Maps links">
+                        <h3>NYC Restaurant Data Cleanup</h3>
+                        <p>Used pandas and NumPy to clean up a dataset of NYC restaurants and find good food in different areas of the city.</p>
+                    </div>
+                    <div class="card">
+                        <img src="assets/arraybag.png" alt="C++ code for the ArrayBag class">
+                        <h3>ADT Bag in C++</h3>
+                        <p>Implemented an array-based Bag using templates, with methods to add items, check if it's empty, and track its size.</p>
+                    </div>
+                </div>
+            </section>
 
             <section id="Education">
                 <h2> Education</h2>
