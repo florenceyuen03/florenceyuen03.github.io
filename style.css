@@ -1,3 +1,4 @@
+/*creating a conflict*/
 h1 {
     color: red;  
 } .title {
@@ -12,3 +13,85 @@ Red and purple are passsed over without "running" because #name
 is an ID sel which is more specific than title or h1
 they technically conflict with each other but name wins 
 */
+
+/* adding hw 2 */
+
+body {
+    margin: 0 5%;
+    font-size: 1rem;
+    background-color: lightsteelblue;
+}
+ 
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar h1 {
+  margin: 0;
+}
+ 
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ 
+.navbar a {
+    padding: 0.2rem 0.2rem;
+    text-decoration: none;
+}
+ 
+.navbar a:hover {
+    background-color: lightskyblue;
+    color: white;
+}
+ 
+/* projects grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+}
+ 
+.card {
+    border: 1px solid gray;
+    padding: 0.5rem;
+}
+ 
+.card img {
+    width: 50%;
+
+    /*to center it*/
+    display: block;
+    margin: 0 auto;
+
+}
+ 
+/* mobile */
+@media (max-width: 768px) {
+    body {
+        font-size: 0.9rem;
+    }
+ 
+    h1 {
+        font-size: 1.5rem;
+    }
+ 
+    .navbar {
+        flex-direction: column;
+    }
+ 
+    .navbar ul {
+        flex-direction: column;
+        padding: 0;
+        text-align: center;
+    }
+ 
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
+ 
